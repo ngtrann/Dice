@@ -29,7 +29,6 @@ void draw()
         numDots+=6;
     }
   }
-
   textSize(20);
   text("Total of Dots: " + numDots, 250, 440);
 }
