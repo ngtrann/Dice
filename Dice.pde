@@ -15,23 +15,23 @@ void draw()
     for (int x = 100; x < 390; x = x + 110) {
       Die mixx = new Die (x, y);
       mixx.show();
-      if(mixx.dice == 1)
-      numDots++;
-      else if(mixx.dice == 2)
-      numDots+=2;
-      else if(mixx.dice == 3)
-      numDots+=3;
-      else if(mixx.dice == 4)
-      numDots+=4;
-      else if(mixx.dice == 5)
-      numDots+=5;
-      else if(mixx.dice == 6)
-      numDots+=6;
+      if (mixx.dice == 1)
+        numDots++;
+      else if (mixx.dice == 2)
+        numDots+=2;
+      else if (mixx.dice == 3)
+        numDots+=3;
+      else if (mixx.dice == 4)
+        numDots+=4;
+      else if (mixx.dice == 5)
+        numDots+=5;
+      else if (mixx.dice == 6)
+        numDots+=6;
     }
   }
- 
+
   textSize(20);
-  text("Total: " + numDots,250,440);
+  text("Total of Dots: " + numDots, 250, 440);
 }
 void mousePressed()
 {
@@ -46,11 +46,11 @@ class Die //models one single dice cube
   {
     roll();
     myX = x;
-    myY = y; 
+    myY = y;
   }
   void roll()
   {
-   dice = (int)(Math.random()*6)+1; 
+    dice = (int)(Math.random()*6)+1;
   }
   void show()
   {
@@ -93,8 +93,8 @@ class Die //models one single dice cube
   } //show
 } //class
 
-void shado(int x, int y){
- noStroke();
- fill(235, 156, 82);
- rect(x, y, 80, 80, 20);
+void shado(int x, int y) {
+  noStroke();
+  fill(235, 156, 82);
+  rect(x, y, 80, 80, 20);
 }
