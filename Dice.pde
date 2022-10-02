@@ -30,7 +30,7 @@ void draw()
     }
   }
   textSize(20);
-  text("Total of Dots: " + numDots, 250, 440);
+  text("Total of # Dots: " + numDots, 250, 440);
 }
 void mousePressed()
 {
