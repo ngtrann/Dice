@@ -8,7 +8,11 @@ void draw()
 {
   int numDots = 0;
   background(255, 169, 88);
-  //add dice shado
+  for(int y=90; y<400; y+=110) {
+    for(int x=110;x<400;x+=110) {
+      shado(x,y);
+    }
+  }
   for (int y = 80; y < 390; y+=110) {
     for (int x = 100; x < 390; x = x + 110) {
       Die mixx = new Die (x, y);
